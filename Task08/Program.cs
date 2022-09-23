@@ -5,12 +5,11 @@
 // 8 -> 2, 4, 6, 8
 
 Console.Write("Введите целое число от 1 и больше: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int res = N % 2;
-if (res > 0) N = N - 1;
-int i = 0;
-while (i < N)
+int n = Convert.ToInt32(Console.ReadLine());
+
+int i = 2;
+while (i < n)
 {
-    i += 2;
     Console.Write($"{i} ");
+i += 2;    
 }
