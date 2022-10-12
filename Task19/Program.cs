@@ -12,7 +12,7 @@
 Console.WriteLine("Ввведите целое пятизначное положительное число ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-bool Paliander(int num)
+bool Palindrom(int num)
 {
     int num1 = (num / 10000) % 10;
     int num2 = (num / 1000) % 10;
@@ -23,5 +23,5 @@ bool Paliander(int num)
 }
 
 if (number>100000 || number < 10000) Console.WriteLine($"число {number} не соответстсует условию задачи"); 
-else if (Paliander(number)) Console.WriteLine($"число {number} является полиндромом");
+else if (Palindrom(number)) Console.WriteLine($"число {number} является полиндромом");
 else Console.WriteLine($"число {number} НЕ является полиндромом");
